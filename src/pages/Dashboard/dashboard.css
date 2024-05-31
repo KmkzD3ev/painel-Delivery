@@ -1,0 +1,21 @@
+.conteiner-grf{
+    margin-left: 200px;
+}
+
+.conteiner-grf h1{
+    margin-left: 200px;
+
+}
+
+
+@media (max-width: 600px) {
+    .container-grf {
+      margin-right: 0px; /* Altere conforme necessário para o espaçamento desejado */
+    }
+  
+    .container-grf h1 {
+      margin-right: 0px; /* Altere conforme necessário para o espaçamento desejado */
+    }
+  
+    /* Outras regras CSS que você queira ajustar para telas menores */
+  }

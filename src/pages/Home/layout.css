@@ -1,0 +1,123 @@
+.card-container {
+
+  margin-left: 200px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Alterado para space-between para distribuir uniformemente e evitar que os cards se amontoem */
+  max-width: 100%; /* Adicionado para garantir que os cards não ultrapassem a largura da tela */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  height: 400px;
+  width: calc(50% - 20px); /* Calculado para que dois cards ocupem 100% da largura da tela em telas menores */
+  max-width: 300px; /* Limitado para garantir que os cards não fiquem muito largos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Adicionado para incluir padding e borda na largura total do card */
+}
+
+.card img {
+  margin-top: 8px;
+  width: 250px; /* Definido para ocupar todo o espaço dentro do card */
+  height: 260px;
+  border-radius: 5px; /* Adicionado para garantir que a imagem tenha bordas arredondadas */
+}
+
+.preco-texto {
+  font-weight: bold;
+}
+
+.preco-valor {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.adcProduto{
+  margin-top: 12px;
+  margin-left: 690px;
+  background-color: #0363ca;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+
+.card h2{
+  margin-top: 15px;
+  color: #007bff;
+}
+
+.card p{
+  margin-top: 15px;
+  
+}
+
+.title-pag{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title-pag h1 {
+  margin-top: 10px;
+  margin-left: 300px;
+ 
+  color: #007bff;
+  
+
+}
+.logof{
+  margin-top: 10px;
+  color: #fff;
+ background-color:  #0056b3;
+  width: 150px;
+  padding: 12px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    margin-left: 20px; /* Ajuste para telas menores */
+    justify-content: space-between; /* Distribui uniformemente os cards */
+  }
+
+  .card {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: none; /* Remove a largura máxima para ocupar toda a largura */
+  }
+
+  .title-pag {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    margin-left: 0; /* Remove a margem esquerda */
+    margin-right: 0; /* Remove a margem direita */
+  }
+
+  .title-pag h1 {
+    margin-bottom: 10px; /* Espaço abaixo do h1 */
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: start; /* Centraliza o texto do h1 */
+    margin-right: 200px;
+  }
+
+  .title-pag button {
+    width: auto; /* Largura do botão de acordo com o conteúdo */
+    margin: 10px 0; /* Margem acima e abaixo do botão */
+  }
+}
